@@ -42,12 +42,12 @@ export default function App() {
       {/* 11시 방향 텍스트 추가 */}
       <div className="hidden md:block absolute top-12 left-8 md:top-20 md:left-20 lg:top-32 lg:left-32 xl:left-48 z-20 drop-shadow-lg pointer-events-none">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-snug tracking-wider">
-          <span className="text-[#ff0000]" style={{ textShadow: '2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 0px 4px 8px rgba(0,0,0,0.4)' }}>오</span>
-          <span className="text-[#222]" style={{ textShadow: '2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 0px 4px 8px rgba(0,0,0,0.4)' }}>늘 </span>
-          <span className="text-[#888]" style={{ textShadow: '2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 0px 4px 8px rgba(0,0,0,0.4)' }}>양</span>
-          <span className="text-[#222]" style={{ textShadow: '2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 0px 4px 8px rgba(0,0,0,0.4)' }}>말<br/></span>
-          <span className="text-[#ffbda1]" style={{ textShadow: '2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 0px 4px 8px rgba(0,0,0,0.4)' }}>무</span>
-          <span className="text-[#222]" style={{ textShadow: '2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 0px 4px 8px rgba(0,0,0,0.4)' }}>슨 색이게?</span>
+          <span className="text-[#ff0000]" style={{ fontSize: '1.5em', textShadow: '2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 0px 4px 8px rgba(0,0,0,0.4)' }}>오</span>
+          <span className="text-[#222]" style={{ fontSize: '0.5em', textShadow: '2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 0px 4px 8px rgba(0,0,0,0.4)' }}>늘 </span>
+          <span className="text-[#888]" style={{ fontSize: '1.5em', textShadow: '2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 0px 4px 8px rgba(0,0,0,0.4)' }}>양</span>
+          <span className="text-[#222]" style={{ fontSize: '0.5em', textShadow: '2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 0px 4px 8px rgba(0,0,0,0.4)' }}>말<br/></span>
+          <span className="text-[#ffbda1]" style={{ fontSize: '1.5em', textShadow: '2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 0px 4px 8px rgba(0,0,0,0.4)' }}>무</span>
+          <span className="text-[#222]" style={{ fontSize: '0.5em', textShadow: '2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 0px 4px 8px rgba(0,0,0,0.4)' }}>슨 색이게?</span>
         </h1>
       </div>
 

@@ -28,7 +28,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="h-[100dvh] w-full font-sans relative overflow-hidden bg-black flex flex-col">
+    <div className="fixed inset-0 w-full font-sans overflow-hidden bg-black">
       {/* Background Image */}
       <div className="absolute -inset-10 z-0">
         <img 
@@ -51,7 +51,7 @@ export default function App() {
         </h1>
       </div>
 
-      <div className="flex-1 w-full relative z-10 flex items-center justify-center md:py-4 md:px-4">
+      <div className="absolute inset-0 z-10 flex items-center justify-center md:py-4 md:px-4">
         
         {/* Phone Mockup */}
         <motion.div 

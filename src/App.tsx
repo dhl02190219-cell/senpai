@@ -28,7 +28,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="h-[100dvh] w-full font-sans relative overflow-hidden flex flex-col items-center justify-center bg-black">
+    <div className="h-[100dvh] w-full font-sans relative overflow-hidden bg-black flex flex-col">
       {/* Background Image */}
       <div className="absolute -inset-10 z-0">
         <img 
@@ -51,14 +51,14 @@ export default function App() {
         </h1>
       </div>
 
-      <div className="w-full h-full md:py-4 md:px-4 flex items-center justify-center z-10">
+      <div className="flex-1 w-full relative z-10 flex items-center justify-center md:py-4 md:px-4">
         
         {/* Phone Mockup */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="w-full h-full md:w-[440px] md:h-[95vh] md:max-h-[920px] bg-white md:rounded-[3rem] shadow-2xl overflow-hidden relative md:border-[12px] border-gray-900 flex-shrink-0"
+          className="absolute inset-0 md:relative w-full h-full md:w-[440px] md:h-[95vh] md:max-h-[920px] bg-white md:rounded-[3rem] shadow-2xl overflow-hidden md:border-[12px] border-gray-900 flex-shrink-0"
         >
           {/* Phone Notch */}
           <div className="hidden md:flex absolute top-0 inset-x-0 h-6 justify-center z-50">

@@ -28,7 +28,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="fixed inset-0 w-full font-sans overflow-hidden bg-black">
+    <div className="fixed inset-0 w-full h-[100dvh] font-sans overflow-hidden bg-black">
       {/* Background Image */}
       <div className="absolute -inset-10 z-0">
         <img 
@@ -51,21 +51,26 @@ export default function App() {
         </h1>
       </div>
 
-      <div className="absolute inset-0 z-10 flex items-center justify-center md:py-4 md:px-4">
+      <div className="absolute inset-0 z-10 md:flex md:items-center md:justify-center md:py-4 md:px-4">
         
         {/* Phone Mockup */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="absolute inset-0 md:relative w-full h-full md:w-[440px] md:h-[95vh] md:max-h-[920px] bg-white md:rounded-[3rem] shadow-2xl overflow-hidden md:border-[12px] border-gray-900 flex-shrink-0"
+          // 2. 클래스 전면 수정: 모바일에서는 빈틈없이 꽉 채우고(relative w-full h-full), 데스크탑(md:)에서만 목업 형태를 갖추도록 변경
+          className="relative w-full h-full bg-white overflow-hidden flex flex-col md:w-[440px] md:h-[95vh] md:max-h-[920px] md:rounded-[3rem] md:shadow-2xl md:border-[12px] md:border-gray-900 md:flex-shrink-0"
         >
           {/* Phone Notch */}
           <div className="hidden md:flex absolute top-0 inset-x-0 h-6 justify-center z-50">
             <div className="w-32 h-6 bg-gray-900 rounded-b-3xl"></div>
           </div>
 
-          <Messenger onOpenProfile={() => setIsProfileOpen(true)} />
+          {/* 메신저 영역이 flex 내부에서 꽉 차도록 유도 */}
+          <div className="flex-1 overflow-hidden relative">
+            <Messenger onOpenProfile={() => setIsProfileOpen(true)} />
+          </div>
+
           <AnimatePresence>
             {isProfileOpen && <Profile onClose={() => setIsProfileOpen(false)} />}
           </AnimatePresence>
